@@ -1,0 +1,909 @@
+[debug] [2024-08-01T01:06:08.219Z] ----------------------------------------------------------------------
+[debug] [2024-08-01T01:06:08.223Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-01T01:06:08.224Z] CLI Version:   13.5.2
+[debug] [2024-08-01T01:06:08.224Z] Platform:      linux
+[debug] [2024-08-01T01:06:08.225Z] Node Version:  v21.6.2
+[debug] [2024-08-01T01:06:08.225Z] Time:          Thu Aug 01 2024 10:06:08 GMT+0900 (日本標準時)
+[debug] [2024-08-01T01:06:08.225Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-01T01:06:08.255Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-01T01:06:08.256Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-01T06:07:34.898Z] ----------------------------------------------------------------------
+[debug] [2024-08-01T06:07:34.902Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-01T06:07:34.902Z] CLI Version:   13.5.2
+[debug] [2024-08-01T06:07:34.903Z] Platform:      linux
+[debug] [2024-08-01T06:07:34.903Z] Node Version:  v21.6.2
+[debug] [2024-08-01T06:07:34.903Z] Time:          Thu Aug 01 2024 15:07:34 GMT+0900 (日本標準時)
+[debug] [2024-08-01T06:07:34.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-01T06:07:34.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-01T06:07:34.918Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-02T00:53:39.536Z] ----------------------------------------------------------------------
+[debug] [2024-08-02T00:53:39.539Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-02T00:53:39.539Z] CLI Version:   13.5.2
+[debug] [2024-08-02T00:53:39.540Z] Platform:      linux
+[debug] [2024-08-02T00:53:39.540Z] Node Version:  v21.6.2
+[debug] [2024-08-02T00:53:39.540Z] Time:          Fri Aug 02 2024 09:53:39 GMT+0900 (日本標準時)
+[debug] [2024-08-02T00:53:39.540Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-02T00:53:39.544Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-02T00:53:39.602Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-02T00:53:39.602Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-02T00:53:40.032Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-02T00:53:40.032Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-02T03:53:43.775Z] ----------------------------------------------------------------------
+[debug] [2024-08-02T03:53:43.778Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-02T03:53:43.778Z] CLI Version:   13.5.2
+[debug] [2024-08-02T03:53:43.778Z] Platform:      linux
+[debug] [2024-08-02T03:53:43.779Z] Node Version:  v21.6.2
+[debug] [2024-08-02T03:53:43.779Z] Time:          Fri Aug 02 2024 12:53:43 GMT+0900 (日本標準時)
+[debug] [2024-08-02T03:53:43.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-02T03:53:43.787Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-02T03:53:43.788Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-02T11:02:57.919Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.088Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.100Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.132Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.168Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.170Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.215Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-02T11:02:58.223Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-03T08:14:18.533Z] ----------------------------------------------------------------------
+[debug] [2024-08-03T08:14:18.537Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-03T08:14:18.538Z] CLI Version:   13.5.2
+[debug] [2024-08-03T08:14:18.538Z] Platform:      linux
+[debug] [2024-08-03T08:14:18.538Z] Node Version:  v21.6.2
+[debug] [2024-08-03T08:14:18.539Z] Time:          Sat Aug 03 2024 17:14:18 GMT+0900 (日本標準時)
+[debug] [2024-08-03T08:14:18.539Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-03T08:14:18.543Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-03T08:14:18.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-03T08:14:18.598Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-03T08:14:18.987Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-03T08:14:18.987Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-04T03:29:23.459Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.587Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.604Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.607Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.613Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.632Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.634Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T03:29:23.636Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-04T07:32:09.820Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T07:32:09.824Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-04T07:32:09.824Z] CLI Version:   13.5.2
+[debug] [2024-08-04T07:32:09.825Z] Platform:      linux
+[debug] [2024-08-04T07:32:09.825Z] Node Version:  v21.6.2
+[debug] [2024-08-04T07:32:09.825Z] Time:          Sun Aug 04 2024 16:32:09 GMT+0900 (日本標準時)
+[debug] [2024-08-04T07:32:09.825Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-04T07:32:09.833Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T07:32:09.834Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-06T02:09:20.315Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.459Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.471Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.479Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.488Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.491Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.502Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:09:20.506Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T02:20:33.625Z] ----------------------------------------------------------------------
+[debug] [2024-08-06T02:20:33.628Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-06T02:20:33.628Z] CLI Version:   13.5.2
+[debug] [2024-08-06T02:20:33.629Z] Platform:      linux
+[debug] [2024-08-06T02:20:33.629Z] Node Version:  v21.6.2
+[debug] [2024-08-06T02:20:33.629Z] Time:          Tue Aug 06 2024 11:20:33 GMT+0900 (日本標準時)
+[debug] [2024-08-06T02:20:33.629Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-06T02:20:33.633Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-06T02:20:33.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-06T02:20:33.686Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-06T02:20:34.168Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-06T02:20:34.168Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-06T06:44:39.806Z] ----------------------------------------------------------------------
+[debug] [2024-08-06T06:44:39.809Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-06T06:44:39.809Z] CLI Version:   13.5.2
+[debug] [2024-08-06T06:44:39.810Z] Platform:      linux
+[debug] [2024-08-06T06:44:39.810Z] Node Version:  v21.6.2
+[debug] [2024-08-06T06:44:39.810Z] Time:          Tue Aug 06 2024 15:44:39 GMT+0900 (日本標準時)
+[debug] [2024-08-06T06:44:39.810Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-06T06:44:39.818Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-06T06:44:39.819Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-06T06:47:33.393Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[debug] [2024-08-06T06:53:33.549Z] ----------------------------------------------------------------------
+[debug] [2024-08-06T06:53:33.561Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-06T06:53:33.562Z] CLI Version:   13.5.2
+[debug] [2024-08-06T06:53:33.563Z] Platform:      linux
+[debug] [2024-08-06T06:53:33.563Z] Node Version:  v21.6.2
+[debug] [2024-08-06T06:53:33.563Z] Time:          Tue Aug 06 2024 15:53:33 GMT+0900 (日本標準時)
+[debug] [2024-08-06T06:53:33.564Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-06T06:53:33.606Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-06T06:53:33.607Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-06T17:11:22.435Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.521Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.533Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.536Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.539Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.550Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.562Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-06T17:11:22.567Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T08:26:14.571Z] ----------------------------------------------------------------------
+[debug] [2024-08-07T08:26:14.574Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-07T08:26:14.575Z] CLI Version:   13.5.2
+[debug] [2024-08-07T08:26:14.575Z] Platform:      linux
+[debug] [2024-08-07T08:26:14.575Z] Node Version:  v21.6.2
+[debug] [2024-08-07T08:26:14.576Z] Time:          Wed Aug 07 2024 17:26:14 GMT+0900 (日本標準時)
+[debug] [2024-08-07T08:26:14.576Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-07T08:26:14.580Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-07T08:26:14.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-07T08:26:14.634Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-07T08:26:15.118Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-07T08:26:15.118Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-07T15:28:57.506Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:57.981Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:57.995Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:57.997Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:57.999Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:58.008Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:58.012Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-07T15:28:58.013Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T03:21:21.920Z] ----------------------------------------------------------------------
+[debug] [2024-08-08T03:21:21.926Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-08T03:21:21.927Z] CLI Version:   13.5.2
+[debug] [2024-08-08T03:21:21.928Z] Platform:      linux
+[debug] [2024-08-08T03:21:21.928Z] Node Version:  v21.6.2
+[debug] [2024-08-08T03:21:21.928Z] Time:          Thu Aug 08 2024 12:21:21 GMT+0900 (日本標準時)
+[debug] [2024-08-08T03:21:21.929Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-08T03:21:21.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-08T03:21:21.942Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-08T14:19:11.786Z] Error: setRawMode EIO
+    at ReadStream.setRawMode (node:tty:77:24)
+    at [_setRawMode] [as _setRawMode] (node:internal/readline/interface:374:18)
+    at Interface.close (node:internal/readline/interface:524:24)
+    at ReadStream.ontermend (node:internal/readline/interface:260:10)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.868Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.870Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.882Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.884Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.886Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.902Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-08T14:19:11.905Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/home/yu/.nvm/versions/node/v21.6.2/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-09T07:43:38.170Z] ----------------------------------------------------------------------
+[debug] [2024-08-09T07:43:38.173Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-09T07:43:38.173Z] CLI Version:   13.5.2
+[debug] [2024-08-09T07:43:38.174Z] Platform:      linux
+[debug] [2024-08-09T07:43:38.174Z] Node Version:  v21.6.2
+[debug] [2024-08-09T07:43:38.174Z] Time:          Fri Aug 09 2024 16:43:38 GMT+0900 (日本標準時)
+[debug] [2024-08-09T07:43:38.174Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-09T07:43:38.178Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-09T07:43:38.233Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-09T07:43:38.234Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
+[debug] [2024-08-09T07:43:38.631Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-09T07:43:38.632Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-09T14:51:31.990Z] ----------------------------------------------------------------------
+[debug] [2024-08-09T14:51:31.995Z] Command:       /home/yu/.nvm/versions/node/v21.6.2/bin/node /home/yu/.nvm/versions/node/v21.6.2/bin/firebase init
+[debug] [2024-08-09T14:51:31.996Z] CLI Version:   13.5.2
+[debug] [2024-08-09T14:51:31.996Z] Platform:      linux
+[debug] [2024-08-09T14:51:31.997Z] Node Version:  v21.6.2
+[debug] [2024-08-09T14:51:31.997Z] Time:          Fri Aug 09 2024 23:51:31 GMT+0900 (日本標準時)
+[debug] [2024-08-09T14:51:31.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-09T14:51:32.014Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-09T14:51:32.015Z] > authorizing via signed-in user (takitakiyuchi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/yu/projects/study/react/240718_react-practice/240718_practice
+
