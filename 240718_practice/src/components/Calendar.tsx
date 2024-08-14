@@ -7,14 +7,27 @@ import "../calendar.css";
 import { Balance, CalendarContent, Transaction } from '../types'
 import { calculateDailyBalances } from '../utils/financeCalculations'
 import { formatCurrency } from '../utils/formatting'
+import interactionPlugin, { DateClickArg } from '@fullcalendar/interaction';
+import { useTheme } from '@mui/material';
+import { isSameMonth } from 'date-fns'
 
 
 interface CalendarProps {
   monthlyTransactions: Transaction[],
   setCurrentMonth: React.Dispatch<React.SetStateAction<Date>>;
+  setCurrentDay: React.Dispatch<React.SetStateAction<string>>;
+  currentDay: string,
+  today: string
 }
-const Calendar = ({monthlyTransactions, setCurrentMonth}: CalendarProps) => { 
-  const dailyBalances = calculateDailyBalances(monthlyTransactions) // この行を先に移動
+const Calendar = ({
+  monthlyTransactions, 
+  setCurrentMonth,
+  setCurrentDay,
+  currentDay,
+  today,
+}: CalendarProps) => { 
+  const theme = useTheme()
+  const dailyBalances = calculateDailyBalances(monthlyTransactions) 
   console.log(dailyBalances)
 
   // FullCalendar用のイベントを生成する関数
@@ -28,15 +41,25 @@ return {
   balance: formatCurrency(balance),
 }
     })
-  }
+  };
+  // FullCalendar用のイベントを生成する関数
   const calendarEvents = createCalendarEvents(dailyBalances)
   console.log(calendarEvents);
 
   const events = [
-    { title: 'Meeting', start: "2024-08-11", income: 500, expense: 200, balance: 300},
-    { title: 'aaa', start: "2024-08-20", income: 300, expense: 200, balance: 100},
+    { start: "2024-08-11", income: 500, expense: 200, balance: 300},
+    { start: "2024-08-11", display: "background", backgroundColor: "red" },
   ]
 
+  const backgroundEvent = {
+    start: currentDay,
+    display: "background",
+    backgroundColor: theme.palette.incomeColor.light,
+  };
+
+  console.log([...calendarEvents, backgroundEvent]);
+
+  // カレンダーイベントの見た目を作る関数
   const renderEventContent = (eventInfo: EventContentArg) => {
     console.log(eventInfo);
     return(
@@ -56,19 +79,31 @@ return {
     )
   }
 
+  // 月の日付取得
   const handleDateSet = (datesetInfo:DatesSetArg) => {
-console.log(datesetInfo);
-setCurrentMonth(datesetInfo.view.currentStart)
-  }
+    const currentMonth = datesetInfo.view.currentStart; 
+console.log();
+setCurrentMonth(currentMonth);
+const todayDate = new Date();
+if(isSameMonth(todayDate, currentMonth)) {
+  setCurrentDay(today);
+}
+};
+
+  const handleDateClick = (dateInfo: DateClickArg) => {
+console.log(dateInfo);
+setCurrentDay(dateInfo.dateStr);
+  } 
 
   return (
     <FullCalendar
       locale={jaLocale}
-      plugins={[dayGridPlugin]}
+      plugins={[dayGridPlugin, interactionPlugin]}
       initialView="dayGridMonth"
-      events={calendarEvents}
+      events={[...calendarEvents, backgroundEvent]}
       eventContent={renderEventContent}
       datesSet={handleDateSet}
+      dateClick={handleDateClick}
     />
   )
 }

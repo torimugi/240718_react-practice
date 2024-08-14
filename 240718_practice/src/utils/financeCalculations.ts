@@ -28,6 +28,9 @@ if(transaction.type === "income") {
 }
 
 acc[day].balance = acc[day].income - acc[day].expense;
+
 return acc;
   }, {});
 }
+
+
