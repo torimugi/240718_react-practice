@@ -20,7 +20,7 @@ const IconComponents:Record<IncomeCategory | ExpenseCategory, JSX.Element> = {
  交通費: <TrainIcon fontSize="small" />,
  給与: <WorkIcon fontSize="small" />,
  副収入: <AddBusinessIcon fontSize="small" />,
- お小遣い: <SavingsIcon fontSize="small" />,
+ お小遣い: <SavingsIcon fontSize="small" />
 };
 
 export default IconComponents

@@ -10,14 +10,16 @@ export const transactionSchema = z.object({
   .min(1, {message: "内容を入力してください"})
   .max(50,{message: "内容は50文字以内にしてください"}),
 
-  category: z.union([
+  category: z
+  .union([
     z.enum(["食費", "日用品", "住居費", "交際費", "娯楽", "交通費"]),
     z.enum(["給与","副収入", "お小遣い"]),
     z.literal(""),
-  ]).refine((val) => val !== "" , {
+  ])
+  .refine((val) => val !== "", {
     message: "カテゴリを選択してください"
   }),
 });
 
-export type Scheme = z.infer<typeof transactionSchema>
+export type Schema = z.infer<typeof transactionSchema>;
 
