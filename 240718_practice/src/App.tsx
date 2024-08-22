@@ -24,7 +24,7 @@ function isFireStoreError(err: unknown):err is {code: string, message: string} {
 
 const [transactions, setTransactions] = useState<Transaction[]>([]);
 const [currentMonth, setCurrentMonth] = useState((new Date()));
-
+const [isLoading, setIsLoading] = useState(true);
 
 // firestoreのデータをすべて取得
   useEffect(() => {
@@ -40,20 +40,21 @@ const [currentMonth, setCurrentMonth] = useState((new Date()));
             id: doc.id,
           } as Transaction
         });
-        setTransactions(transactionData)
-        console.log(transactionData)
+        setTransactions(transactionData);
       } catch(err) {
         if(isFireStoreError(err)) {
           console.error("Firestoreのエラーは:",err)
         } else {
           console.error("一般的なエラーは:",err)
-        }
-        // error
+        } 
+      } finally {
+        setIsLoading(false);
       }
     }
     fecheTransactions();
-
   }, [])
+  console.log(transactions);
+  console.log(isLoading);
 
   // ひと月分のデータのみ取得
   const monthlyTransactions = transactions.filter((transaction) => {
@@ -153,6 +154,8 @@ setTransactions(updatedTrandactions);
             <Report 
             currentMonth={currentMonth}
             setCurrentMonth={setCurrentMonth}
+            monthlyTransactions={monthlyTransactions}
+            isLoading={isLoading}
             />} />
             <Route path="*" element={<NoMatch />} />
             </Route>
