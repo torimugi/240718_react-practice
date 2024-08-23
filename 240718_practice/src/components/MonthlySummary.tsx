@@ -5,6 +5,7 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import { Transaction } from '../types';
 import { financeCalculations } from '../utils/financeCalculations';
+import { formatCurrency } from '../utils/formatting';
 
 interface MonthlySummaryProps {
   monthlyTransactions: Transaction[],
@@ -39,7 +40,7 @@ const {income, expense, balance} = financeCalculations(monthlyTransactions);
   fontSize: { xs: ".8rem", sm: "1rem", md: "1.2rem" }
 }}
   >
-  ¥{income}
+  ¥{formatCurrency(income)}
   </Typography>
 </CardContent>
   </Card>
@@ -67,7 +68,7 @@ const {income, expense, balance} = financeCalculations(monthlyTransactions);
   fontSize: { xs: ".8rem", sm: "1rem", md: "1.2rem" }
 }}
   >
-  ¥{expense}
+  ¥{formatCurrency(expense)}
   </Typography>
 </CardContent>
   </Card>
@@ -95,7 +96,7 @@ const {income, expense, balance} = financeCalculations(monthlyTransactions);
   fontSize: { xs: ".8rem", sm: "1rem", md: "1.2rem" }
 }}
   >
-  ¥{balance}
+  ¥{formatCurrency(balance)}
   </Typography>
 </CardContent>
   </Card>
