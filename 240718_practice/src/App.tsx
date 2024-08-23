@@ -90,14 +90,28 @@ setTransactions((prevTransaction) => [
 
   // 削除処理
   const handleDeleteTransaction = async(
-    transactionId: string
+    transactionIds: string | readonly string[]
     ): Promise<void> => {
 try {
+const idsToDelete = Array.isArray(transactionIds) 
+? transactionIds 
+: [transactionIds];
+console.log(idsToDelete);
+
+console.log(idsToDelete);
+
+for(const id of idsToDelete) {
 // firastoreのデータを削除
-await deleteDoc(doc(db, "Transactions", transactionId));
+await deleteDoc(doc(db, "Transactions", id));
+}
 // フロントの更新処理
-const filterdTransactions = transactions.filter(
-  (transaction) => transaction.id !== transactionId);
+// const filterdTransactions = transactions.filter(
+//   (transaction) => transaction.id !== transactionId);
+
+  const filterdTransactions = transactions.filter(
+    (transaction) => !idsToDelete.includes(transaction.id)
+  );
+  
 console.log(filterdTransactions);
 setTransactions(filterdTransactions)
 } catch(err) {
@@ -156,6 +170,7 @@ setTransactions(updatedTrandactions);
             setCurrentMonth={setCurrentMonth}
             monthlyTransactions={monthlyTransactions}
             isLoading={isLoading}
+            onDeleteTransaction={handleDeleteTransaction}
             />} />
             <Route path="*" element={<NoMatch />} />
             </Route>

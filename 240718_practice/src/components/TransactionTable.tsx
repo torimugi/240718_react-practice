@@ -63,11 +63,12 @@ function TransactionTableHead(props: TransactionTableHeadProps) {
 
 interface TransactionTableToolbarProps {
   numSelected: number;
+  onDelete: () => void;
 }
 
 // ツールバー
 function TransactionTableToolbar(props: TransactionTableToolbarProps) {
-  const { numSelected } = props;
+  const { numSelected, onDelete } = props;
 
   return (
     <Toolbar
@@ -101,7 +102,7 @@ function TransactionTableToolbar(props: TransactionTableToolbarProps) {
       )}
       {numSelected > 0 && (
         <Tooltip title="Delete">
-          <IconButton>
+          <IconButton onClick={onDelete}>
             <DeleteIcon />
           </IconButton>
         </Tooltip>
@@ -141,11 +142,14 @@ function FinancialItem({ title, value, color }: FinancialItemProps ) {
 
 interface TransactionTableProps {
   monthlyTransactions: Transaction[]
+  onDeleteTransaction: (transactionId: string | readonly string[]
+    ) => Promise<void>
 }
 
 // 本体
 export default function TransactionTable({
-  monthlyTransactions
+  monthlyTransactions,
+  onDeleteTransaction
   }: TransactionTableProps) {
   const theme = useTheme();
   const [selected, setSelected] = React.useState<readonly string[]>([]);
@@ -182,6 +186,12 @@ export default function TransactionTable({
 
   const handleChangePage = (event: unknown, newPage: number) => {
     setPage(newPage);
+  };
+
+  console.log(selected);
+  const handleDelete = () => {
+    onDeleteTransaction(selected);
+    setSelected([]);
   };
 
   const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -236,7 +246,11 @@ export default function TransactionTable({
     </Grid>
 
         {/* ツールバー */}
-        <TransactionTableToolbar numSelected={selected.length} />
+        <TransactionTableToolbar 
+        numSelected={selected.length}
+        onDelete={handleDelete}
+        
+        />
         
         {/* 取引一覧 */}
         <TableContainer>
