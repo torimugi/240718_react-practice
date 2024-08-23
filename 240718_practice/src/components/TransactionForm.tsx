@@ -2,9 +2,13 @@ import {
   Box,
   Button,
   ButtonGroup,
+  FormControl,
+  FormHelperText,
   IconButton,
+  InputLabel,
   ListItemIcon,
   MenuItem,
+  Select,
   Stack,
   TextField,
   Typography,
@@ -259,21 +263,39 @@ const handleDelete = () => {
           name="category"
           control={control}
           render={({field}) => (
-              <TextField 
-              error={!!errors.category}
-              helperText={errors.category?.message}
-            {...field} // fieldオブジェクトのプロパティをTextFieldに展開
-            id="カテゴリ"
-            label="カテゴリ" 
-             select //select属性を設定してドロップダウンメニューを有効化
-            >
-              {categories.map((category, index) => (
+            //   <TextField 
+            //   error={!!errors.category}
+            //   helperText={errors.category?.message}
+            // {...field} // fieldオブジェクトのプロパティをTextFieldに展開
+            // id="カテゴリ"
+            // label="カテゴリ" 
+            //  select //select属性を設定してドロップダウンメニューを有効化
+            // >
+            //   {categories.map((category, index) => (
+            //    <MenuItem value={category.label} key={index}>
+            //   <ListItemIcon>{category.icon}</ListItemIcon>
+            //   {category.label}
+            // </MenuItem> 
+            //      ))}
+            // </TextField>
+
+            <FormControl fullWidth error={!!errors.category}>
+            <InputLabel id="category-select-label">カテゴリ</InputLabel>
+            <Select
+            {...field}
+              labelId="category-select-label"
+              id="category-select"
+              label="カテゴリ"
+              >
+           {categories.map((category, index) => (
                <MenuItem value={category.label} key={index}>
               <ListItemIcon>{category.icon}</ListItemIcon>
               {category.label}
             </MenuItem> 
                  ))}
-            </TextField>
+            </Select>
+            <FormHelperText>{errors.category?.message}</FormHelperText>
+               </FormControl>
             )}
           />
           

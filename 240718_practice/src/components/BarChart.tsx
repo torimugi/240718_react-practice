@@ -72,7 +72,8 @@ const data :ChartData<"bar"> = {
 };
 
 return (
-  <Box sx={{ 
+  <Box 
+  sx={{ 
   flexGrow: 1,
   display: "flex",
   alignItems: "center",
