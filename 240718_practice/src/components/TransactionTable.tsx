@@ -362,13 +362,16 @@ export default function TransactionTable({
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
   const visibleRows = React.useMemo(
-    () =>
-      stableSort(rows, getComparator(order, orderBy)).slice(
+    () =>{
+    const copyMonthlyTransactions = [...monthlyTransactions];
+      return copyMonthlyTransactions.slice(
         page * rowsPerPage,
         page * rowsPerPage + rowsPerPage,
-      ),
-    [order, orderBy, page, rowsPerPage],
+      );
+    }, [order, orderBy, page, rowsPerPage, monthlyTransactions],
   );
+  console.log(rows);
+  console.log(visibleRows);
 
   const { income, expense, balance } = financeCalculations(monthlyTransactions)
   console.log({ income, expense, balance });
@@ -415,6 +418,8 @@ export default function TransactionTable({
               onRequestSort={handleRequestSort}
               rowCount={monthlyTransactions.length}
             />
+
+            {/* 取引内容 */}
             <TableBody>
               {visibleRows.map((row, index) => {
                 const isItemSelected = isSelected(row.id);
