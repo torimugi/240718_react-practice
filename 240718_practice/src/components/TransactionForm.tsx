@@ -2,6 +2,8 @@ import {
   Box,
   Button,
   ButtonGroup,
+  Dialog,
+  DialogContent,
   FormControl,
   FormHelperText,
   IconButton,
@@ -42,7 +44,10 @@ interface TransactionFormProps {
   onDeleteTransaction:  (transactionId: string | readonly string[]
     ) => Promise<void>;
   setSelectedTransaction: React.Dispatch<React.SetStateAction<Transaction | null>>;
-  onUpdateTransaction: (transaction: Schema, transactionId: string) => Promise<void>
+  onUpdateTransaction: (transaction: Schema, transactionId: string) => Promise<void>;
+  isMobile: boolean;
+  isDialogOpen: boolean;
+  setIsDialogOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 type IncomeExpense = "income" | "expense";
@@ -61,6 +66,9 @@ const TransactionForm = ({
   onDeleteTransaction,
   setSelectedTransaction,
   onUpdateTransaction,
+  isMobile,
+  isDialogOpen,
+  setIsDialogOpen
   }: TransactionFormProps) => {
   const formWidth = 320;
 
@@ -123,6 +131,9 @@ if(selectedTransaction) {
   .then(() => {
   // console.log("更新しました");
   setSelectedTransaction(null);
+  if(isMobile) {
+    setIsDialogOpen(false);
+  }
   })
   .catch((error) => {
 console.error(error);
@@ -181,179 +192,204 @@ if(selectedTransaction) {
 const handleDelete = () => {
   if (selectedTransaction) {
     onDeleteTransaction(selectedTransaction.id);
+    if (isMobile) {
+      setIsDialogOpen(false);
+    }
     setSelectedTransaction(null);
   }
 };
 
-  return (
-    <Box
-      sx={{
-        position: "fixed",
-        top: 64,
-        right: isEntryDrawerOpen ? formWidth : "-2%", // フォームの位置を調整
-        width: formWidth,
-        height: "100%",
-        bgcolor: "background.paper",
-        zIndex: (theme) => theme.zIndex.drawer - 1,
-        transition: (theme) =>
-          theme.transitions.create("right", {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-          }),
-        p: 2, // 内部の余白
-        boxSizing: "border-box", // ボーダーとパディングをwidthに含める
-        boxShadow: "0px 0px 15px -5px #777777",
+const formContent = (
+  <>
+  {/* 入力エリアヘッダー */}
+<Box display={"flex"} justifyContent={"space-between"} mb={2}>
+  <Typography variant="h6">入力</Typography>
+  {/* 閉じるボタン */}
+  <IconButton
+  onClick={onCloseForm}
+    sx={{
+      color: (theme) => theme.palette.grey[500],
+    }}
+  >
+    <CloseIcon />
+  </IconButton>
+</Box>
+{/* フォーム要素 */}
+<Box component={"form"} onSubmit={handleSubmit(onSubmit)}>
+  <Stack spacing={2}>
+    {/* 収支切り替えボタン */}
+    <Controller
+    name="type"
+    control={control}
+    render={({ field: { value } }) => ( // fieldオブジェクトからvalueを直接展開
+    <ButtonGroup fullWidth>
+      <Button 
+      variant={value === "expense" ? "contained" : "outlined"} 
+      color="error" 
+      onClick={() => incomeExpenseToggle("expense")}>
+        支出
+      </Button>
+      <Button 
+      onClick={() =>incomeExpenseToggle("income")}
+      variant={value === "income" ? "contained" : "outlined"} 
+      color={"primary"}
+      >収入</Button>
+    </ButtonGroup>
+    )}
+    />
+    {/* 日付 */}
+    <Controller
+    name="date"
+    control={control}
+    render={({ field }) => (
+    <TextField
+    {...field}
+      label="日付"
+      type="date"
+      InputLabelProps={{
+        shrink: true,
       }}
-    >
-      {/* 入力エリアヘッダー */}
-      <Box display={"flex"} justifyContent={"space-between"} mb={2}>
-        <Typography variant="h6">入力</Typography>
-        {/* 閉じるボタン */}
-        <IconButton
-        onClick={onCloseForm}
-          sx={{
-            color: (theme) => theme.palette.grey[500],
-          }}
+      error={!!errors.date}
+      helperText={errors.date?.message}
+      />
+      )}
+    />
+    
+    {/* カテゴリ */}
+    <Controller
+    name="category"
+    control={control}
+    render={({field}) => (
+      //   <TextField 
+      //   error={!!errors.category}
+      //   helperText={errors.category?.message}
+      // {...field} // fieldオブジェクトのプロパティをTextFieldに展開
+      // id="カテゴリ"
+      // label="カテゴリ" 
+      //  select //select属性を設定してドロップダウンメニューを有効化
+      // >
+      //   {categories.map((category, index) => (
+      //    <MenuItem value={category.label} key={index}>
+      //   <ListItemIcon>{category.icon}</ListItemIcon>
+      //   {category.label}
+      // </MenuItem> 
+      //      ))}
+      // </TextField>
+
+      <FormControl fullWidth error={!!errors.category}>
+      <InputLabel id="category-select-label">カテゴリ</InputLabel>
+      <Select
+      {...field}
+        labelId="category-select-label"
+        id="category-select"
+        label="カテゴリ"
         >
-          <CloseIcon />
-        </IconButton>
-      </Box>
-      {/* フォーム要素 */}
-      <Box component={"form"} onSubmit={handleSubmit(onSubmit)}>
-        <Stack spacing={2}>
-          {/* 収支切り替えボタン */}
-          <Controller
-          name="type"
-          control={control}
-          render={({ field: { value } }) => ( // fieldオブジェクトからvalueを直接展開
-          <ButtonGroup fullWidth>
-            <Button 
-            variant={value === "expense" ? "contained" : "outlined"} 
-            color="error" 
-            onClick={() => incomeExpenseToggle("expense")}>
-              支出
-            </Button>
-            <Button 
-            onClick={() =>incomeExpenseToggle("income")}
-            variant={value === "income" ? "contained" : "outlined"} 
-            color={"primary"}
-            >収入</Button>
-          </ButtonGroup>
-          )}
-          />
-          {/* 日付 */}
-          <Controller
-          name="date"
-          control={control}
-          render={({ field }) => (
-          <TextField
-          {...field}
-            label="日付"
-            type="date"
-            InputLabelProps={{
-              shrink: true,
-            }}
-            error={!!errors.date}
-            helperText={errors.date?.message}
-            />
-            )}
-          />
-          
-          {/* カテゴリ */}
-          <Controller
-          name="category"
-          control={control}
-          render={({field}) => (
-            //   <TextField 
-            //   error={!!errors.category}
-            //   helperText={errors.category?.message}
-            // {...field} // fieldオブジェクトのプロパティをTextFieldに展開
-            // id="カテゴリ"
-            // label="カテゴリ" 
-            //  select //select属性を設定してドロップダウンメニューを有効化
-            // >
-            //   {categories.map((category, index) => (
-            //    <MenuItem value={category.label} key={index}>
-            //   <ListItemIcon>{category.icon}</ListItemIcon>
-            //   {category.label}
-            // </MenuItem> 
-            //      ))}
-            // </TextField>
+     {categories.map((category, index) => (
+         <MenuItem value={category.label} key={index}>
+        <ListItemIcon>{category.icon}</ListItemIcon>
+        {category.label}
+      </MenuItem> 
+           ))}
+      </Select>
+      <FormHelperText>{errors.category?.message}</FormHelperText>
+         </FormControl>
+      )}
+    />
+    
+    {/* 金額 */}
+    <Controller
+    name="amount"
+    control={control}
+    render={({field}) => {
+      console.log(field);
+      return (
+      <TextField
+      error={!!errors.amount}
+      helperText={errors.amount?.message}
+     {...field}
+     value={field.value === 0 ? "" : field.value}
+     onChange={(e) => {
+      const newValue = parseInt(e.target.value, 10) || 0;
+      field.onChange(newValue);
+     }}
+     label="金額" 
+     type="number" />
+     );
+    }}
+    />
+    
+    {/* 内容 */}
+    <Controller
+    name="content"
+    control={control}
+    render={({field}) => (
+      <TextField 
+      error={!!errors.content}
+      helperText={errors.content?.message}
+      {...field} label="内容" type="text" />
+    )}
+      />
+    {/* 保存ボタン */}
+    <Button 
+    type="submit" 
+    variant="contained" 
+    color={currentType === "expense" ? "error" : "primary"} fullWidth>
+      {selectedTransaction ? "更新" : "保存"}
+    </Button>
 
-            <FormControl fullWidth error={!!errors.category}>
-            <InputLabel id="category-select-label">カテゴリ</InputLabel>
-            <Select
-            {...field}
-              labelId="category-select-label"
-              id="category-select"
-              label="カテゴリ"
-              >
-           {categories.map((category, index) => (
-               <MenuItem value={category.label} key={index}>
-              <ListItemIcon>{category.icon}</ListItemIcon>
-              {category.label}
-            </MenuItem> 
-                 ))}
-            </Select>
-            <FormHelperText>{errors.category?.message}</FormHelperText>
-               </FormControl>
-            )}
-          />
-          
-          {/* 金額 */}
-          <Controller
-          name="amount"
-          control={control}
-          render={({field}) => {
-            console.log(field);
-            return (
-            <TextField
-            error={!!errors.amount}
-            helperText={errors.amount?.message}
-           {...field}
-           value={field.value === 0 ? "" : field.value}
-           onChange={(e) => {
-            const newValue = parseInt(e.target.value, 10) || 0;
-            field.onChange(newValue);
-           }}
-           label="金額" 
-           type="number" />
-           );
-          }}
-          />
-          
-          {/* 内容 */}
-          <Controller
-          name="content"
-          control={control}
-          render={({field}) => (
-            <TextField 
-            error={!!errors.content}
-            helperText={errors.content?.message}
-            {...field} label="内容" type="text" />
-          )}
-            />
-          {/* 保存ボタン */}
-          <Button 
-          type="submit" 
-          variant="contained" 
-          color={currentType === "expense" ? "error" : "primary"} fullWidth>
-            {selectedTransaction ? "更新" : "保存"}
-          </Button>
+   {selectedTransaction && (
+    <Button onClick={handleDelete}
+    variant="outlined" 
+    color={"secondary"} 
+    fullWidth>
+      削除
+    </Button>
+   )}
+    {/* 削除ボタン */}
+    
+  </Stack>
+</Box>
+  </>
+)
 
-         {selectedTransaction && (
-          <Button onClick={handleDelete}
-          variant="outlined" 
-          color={"secondary"} 
-          fullWidth>
-            削除
-          </Button>
-         )}
-          {/* 削除ボタン */}
-          
-        </Stack>
-      </Box>
-    </Box>
+  return (
+<>
+{isMobile ? (
+// mobile
+<Dialog 
+open={isDialogOpen} 
+onClose={onCloseForm} 
+fullWidth
+maxWidth={"sm"}>
+<DialogContent>
+{formContent}
+</DialogContent>
+</Dialog>
+) : (
+// PC
+<Box
+sx={{
+  position: "fixed",
+  top: 64,
+  right: isEntryDrawerOpen ? formWidth : "-2%", // フォームの位置を調整
+  width: formWidth,
+  height: "100%",
+  bgcolor: "background.paper",
+  zIndex: (theme) => theme.zIndex.drawer - 1,
+  transition: (theme) =>
+    theme.transitions.create("right", {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  p: 2, // 内部の余白
+  boxSizing: "border-box", // ボーダーとパディングをwidthに含める
+  boxShadow: "0px 0px 15px -5px #777777",
+}}
+>
+{formContent}
+</Box>
+)}
+    </>
   );
 };
 export default TransactionForm;
